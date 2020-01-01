@@ -1,4 +1,5 @@
 <?php
+// Arrays numéricos
 $carros = array("BMW", "Veloster", "Hilux");
 $carros[] = "Amarok";
 $carros[10] = "Camaro";
@@ -47,3 +48,44 @@ foreach ($clientes as $valor) {
 }
 
 echo "<hr>";
+
+// Arrays associativos
+$pessoa = array("nome" => "Devair", "idade" => 35, "altura" => 1.81);
+echo $pessoa["nome"] . "<br>";
+echo $pessoa["idade"] . "<br>";
+echo $pessoa["altura"] . "<br>";
+print_r($pessoa);
+
+echo "<br>";
+
+$pessoa["cidade"] = "São José do Rio Preto";
+print_r($pessoa);
+
+echo "<br>";
+echo "<br>";
+
+foreach ($pessoa as $indice => $valor) {
+    echo $indice . ": " . $valor . "<br>";
+}
+
+echo "<hr>";
+
+// Arrays multidimensionais
+$times = array(
+    "cariocas" => array("Vasco", "Flamengo", "Botafogo"),
+    "paulistas" => array("Santos", "São Paulo", "Palmeiras"),
+    "baianos" => array("Bahia", "Vitória", "Itabuna")
+);
+
+print_r($times);
+
+echo "<br>";
+
+foreach ($times as $indice => $valor) {
+    echo "<h3>$indice</h3>";
+    echo "<ul>";
+    foreach ($valor as $time) {
+        echo "<li>$time</li>";
+    }
+    echo "</ul>";
+}
