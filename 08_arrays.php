@@ -16,3 +16,34 @@ echo "<hr>";
 
 $clientes = ["Ana", "Bianca", "Devair"];
 print_r($clientes);
+
+echo "<hr>";
+
+// Conta os elementos de um array
+echo count($carros);
+echo "<br>";
+echo count($motos);
+echo "<br>";
+echo count($clientes);
+echo "<br>";
+
+echo "<hr>";
+
+// Loop no array
+foreach ($carros as $valor) {
+    echo $valor . "<br>";
+}
+
+echo "<br>";
+
+foreach ($motos as $valor) {
+    echo $valor . "<br>";
+}
+
+echo "<br>";
+
+foreach ($clientes as $valor) {
+    echo $valor . "<br>";
+}
+
+echo "<hr>";
