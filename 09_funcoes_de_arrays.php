@@ -97,3 +97,15 @@ $soma = [5, 6, 10, 8];
 echo array_sum($soma);
 
 echo "<hr>";
+
+// Transforma string em array
+$data = "02/01/2020";
+$novaData = explode("/", $data);
+print_r($novaData);
+
+echo "<hr>";
+
+// Transforma array em string
+$data = ["02", "01", "2020"];
+$novaData = implode("/", $data);
+print_r($novaData);
