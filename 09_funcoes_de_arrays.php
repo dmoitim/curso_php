@@ -62,3 +62,38 @@ array_shift($carros);
 print_r($carros);
 
 echo "<hr>";
+
+// Adiciona um ou mais elementos no início do array
+$frutas = ["Uva", "Laranja", "Maçã"];
+print_r($frutas);
+
+echo "<br>";
+
+array_unshift($frutas, "Manga", "Acerola", "Morango");
+print_r($frutas);
+
+echo "<hr>";
+
+// Adiciona um ou mais elementos no final do array
+print_r($frutas);
+
+echo "<br>";
+
+array_push($frutas, "Melão", "Abacaxi");
+print_r($frutas);
+
+echo "<hr>";
+
+// Mescla dois arrays
+$keys = ["Campeão", "Vice", "Terceiro"];
+$values = ["São Paulo", "Palmeiras", "Santos"];
+$times = array_combine($keys, $values);
+print_r($times);
+
+echo "<hr>";
+
+// Calcula a soma dos elementos de um array
+$soma = [5, 6, 10, 8];
+echo array_sum($soma);
+
+echo "<hr>";
