@@ -1,4 +1,5 @@
 <?php
+// IF
 $numero = 50;
 
 if ($numero == 10) :
@@ -12,5 +13,26 @@ endif;
 echo "<hr>";
 
 $media = 7;
-
 echo ($media >= 7 ? "Aprovado" : "Reprovado");
+echo "<hr>";
+
+// CASE
+$cor = "vermelho";
+
+switch ($cor):
+    case "vermelho":
+        echo "Sua cor preferida é o vermelho";
+        break;
+
+    case "verde":
+        echo "Sua cor preferida é o verde";
+        break;
+
+    case "azul":
+        echo "Sua cor preferida é o azul";
+        break;
+
+    default:
+        echo "Você não escolheu uma das cores RGB.";
+        break;
+endswitch;
